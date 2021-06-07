@@ -6,6 +6,11 @@
   --h3-size: 1.5rem;
 }
 
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
 .app-wrapper {
   max-width: 84rem;
   margin: auto;
