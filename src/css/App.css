@@ -1,0 +1,13 @@
+:root {
+  --primary-500: #ff6060;
+
+  --h1-size: 3rem;
+  --h2-size: 2.25rem;
+  --h3-size: 1.5rem;
+}
+
+.app-wrapper {
+  max-width: 84rem;
+  margin: auto;
+  padding: 0 3rem;
+}

@@ -1,17 +1,20 @@
 import React from "react";
 
+import "../css/Header.css";
 import logo from "../logo.svg";
 
 class Header extends React.Component {
   render() {
     return (
       <header>
-        <img src={logo} className="App-logo" alt="Kasa" />
+        <img src={logo} alt="Kasa" />
 
-        <ul>
-          <li>Accueil</li>
-          <li>&Agrave; propos</li>
-        </ul>
+        <nav className="main-nav">
+          <ul>
+            <li>Accueil</li>
+            <li>&Agrave; propos</li>
+          </ul>
+        </nav>
       </header>
     );
   }

@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 3rem 0;
+}
+
+.main-nav {
+  color: var(--primary-500);
+  font-size: var(--h3-size);
+}
+
+.main-nav ul {
+  display: flex;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+.main-nav li {
+  margin: 0 0 0 3rem;
+}
