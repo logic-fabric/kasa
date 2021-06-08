@@ -1,8 +1,20 @@
 .gallery {
-  width: 100%;
+  width: calc(100% - 3rem);
   min-height: 20rem;
   margin: 2rem 0;
+  padding: 1.5rem;
   border-radius: 1.5rem;
 
   background: var(--neutral-100);
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
