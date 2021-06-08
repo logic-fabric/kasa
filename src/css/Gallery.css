@@ -1,0 +1,8 @@
+.gallery {
+  width: 100%;
+  min-height: 20rem;
+  margin: 2rem 0;
+  border-radius: 1.5rem;
+
+  background: var(--neutral-100);
+}
