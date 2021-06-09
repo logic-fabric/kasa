@@ -1,0 +1,17 @@
+footer {
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+
+  background: black;
+}
+
+footer img {
+  margin: 3rem 0 0 0;
+
+  color: white;
+}
+
+footer p {
+  font-size: var(--h3-size);
+}

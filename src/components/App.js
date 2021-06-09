@@ -1,6 +1,7 @@
 import React from "react";
 
 import Banner from "./Banner";
+import Footer from "./Footer";
 import Gallery from "./Gallery.js";
 import Header from "./Header";
 import "../css/App.css";
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Header />
         <Banner />
         <Gallery />
+        <Footer />
       </div>
     );
   }
