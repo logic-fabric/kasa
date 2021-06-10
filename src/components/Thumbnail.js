@@ -7,7 +7,7 @@ class Thumbnail extends React.Component {
     return (
       <article className="thumbnail">
         <img src="" alt="" />
-        <h2 className="thumbnail__title">Titre de la location</h2>
+        <h2 className="thumbnail__title">{this.props.title}</h2>
       </article>
     );
   }

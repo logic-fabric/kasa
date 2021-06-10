@@ -12,7 +12,7 @@ class App extends React.Component {
       <div className="app-wrapper">
         <Header />
         <Banner />
-        <Gallery />
+        <Gallery advertisements={this.props.advertisements} />
         <Footer />
       </div>
     );
