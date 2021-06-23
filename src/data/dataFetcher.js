@@ -1,7 +1,7 @@
 import {
   PropertyAdvertisement,
   PropertyAdvertisementsList,
-} from "./propertyAdvertisement.js";
+} from "./propertyAdvertisement";
 
 export class DataFetcher {
   constructor(dataSource) {

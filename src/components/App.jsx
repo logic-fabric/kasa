@@ -2,7 +2,7 @@ import React from "react";
 
 import Banner from "./Banner";
 import Footer from "./Footer";
-import Gallery from "./Gallery.js";
+import Gallery from "./Gallery";
 import Header from "./Header";
 import "../css/App.css";
 

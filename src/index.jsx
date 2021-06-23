@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./index.css";
-import { DataFetcher } from "./data/dataFetcher.js";
+
+import { DataFetcher } from "./data/dataFetcher";
 import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
 async function initApp(dataFetcher) {
   const advertisementsList = await dataFetcher.fetchSource();
