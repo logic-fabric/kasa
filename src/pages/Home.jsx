@@ -1,9 +1,7 @@
 import React from "react";
 
-import Banner from "./Banner";
-import Footer from "./Footer";
-import Gallery from "./Gallery";
-import Header from "./Header";
+import Banner from "../components/Banner";
+import Gallery from "../components/Gallery";
 import "../css/Home.css";
 
 class Home extends React.Component {
@@ -12,7 +10,6 @@ class Home extends React.Component {
       <div className="Home">
         <Banner />
         <Gallery advertisements={this.props.advertisements} />
-        <Footer />
       </div>
     );
   }

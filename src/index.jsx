@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { DataFetcher } from "./data/dataFetcher";
-import Home from "./components/Home";
+import About from "./pages/About";
+import Error404 from "./pages/Error404";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
@@ -20,7 +23,14 @@ async function initApp(dataFetcher) {
             <Route exact path="/">
               <Home advertisements={advertisementsList.advertisements} />
             </Route>
+            <Route path="/a-propos">
+              <About />
+            </Route>
+            <Route>
+              <Error404 />
+            </Route>
           </Switch>
+          <Footer />
         </Router>
       </div>
     </React.StrictMode>,
