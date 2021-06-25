@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { DataFetcher } from "./data/dataFetcher";
-import App from "./components/App";
+import Home from "./components/Home";
+import Header from "./components/Header";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
@@ -12,7 +13,16 @@ async function initApp(dataFetcher) {
 
   ReactDOM.render(
     <React.StrictMode>
-      <App advertisements={advertisementsList.advertisements} />
+      <div className="app-wrapper">
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home advertisements={advertisementsList.advertisements} />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </React.StrictMode>,
     document.getElementById("root")
   );
