@@ -8,7 +8,10 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-        <Banner />
+        <Banner
+          imgSource="../assets/coast-landscape.png"
+          title="Chez vous, partout et ailleurs"
+        />
         <Gallery advertisements={this.props.advertisements} />
       </div>
     );

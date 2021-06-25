@@ -7,10 +7,10 @@ class Banner extends React.Component {
     return (
       <div className="hero-banner">
         <img
-          src="../assets/eric-muhr-landscape.jpeg"
+          src={this.props.imgSource}
           alt="Un paysage sauvage de bord de mer"
         />
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>{this.props.title}</h1>
       </div>
     );
   }
