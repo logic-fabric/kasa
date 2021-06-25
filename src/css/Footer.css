@@ -1,6 +1,6 @@
 footer {
-  color: white;
   padding: 1rem 2rem;
+
   text-align: center;
 
   background: black;
@@ -13,5 +13,6 @@ footer img {
 }
 
 footer p {
+  color: white;
   font-size: var(--h3-size);
 }
