@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "../css/Banner.css";
 
@@ -15,5 +16,10 @@ class Banner extends React.Component {
     );
   }
 }
+
+Banner.propTypes = {
+  imgSource: PropTypes.string.isRequired,
+  title: PropTypes.string,
+};
 
 export default Banner;

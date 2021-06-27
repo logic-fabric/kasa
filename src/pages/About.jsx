@@ -7,7 +7,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="About">
-        <Banner imgSource="../assets/mountain-landscape.png" title="" />
+        <Banner imgSource="../assets/mountain-landscape.png" />
       </div>
     );
   }

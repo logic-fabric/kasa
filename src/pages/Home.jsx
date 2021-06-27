@@ -1,8 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 import "../css/Home.css";
+import { PropertyAdvertisement } from "../data/propertyAdvertisement";
 
 class Home extends React.Component {
   render() {
@@ -17,5 +19,11 @@ class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  advertisements: PropTypes.arrayOf(
+    PropTypes.instanceOf(PropertyAdvertisement)
+  ).isRequired,
+};
 
 export default Home;

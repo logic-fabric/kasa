@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "../css/Thumbnail.css";
 
@@ -12,5 +13,9 @@ class Thumbnail extends React.Component {
     );
   }
 }
+
+Thumbnail.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Thumbnail;
