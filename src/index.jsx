@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { DataFetcher } from "./data/dataFetcher";
 import About from "./pages/About/About";
+import Advertisement from "./pages/Advertisement/Advertisement";
 import Error404 from "./pages/Error404/Error404";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
@@ -26,6 +27,10 @@ async function initApp(dataFetcher) {
             <Route path="/a-propos">
               <About />
             </Route>
+            <Route
+              path="/location/:id"
+              render={(props) => <Advertisement {...props} />}
+            ></Route>
             <Route>
               <Error404 />
             </Route>
