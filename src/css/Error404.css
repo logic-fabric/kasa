@@ -1,0 +1,23 @@
+.Error404 {
+  text-align: center;
+}
+
+.Error404__status-code {
+  margin: 8rem 0 4rem 0;
+  font-size: 18rem;
+  font-weight: 700;
+}
+
+.Error404__text {
+  font-size: 2rem;
+}
+
+.Error404__link-to-home {
+  display: inline-block;
+
+  margin: 8rem 0;
+
+  color: var(--primary-500);
+  font-size: var(--h3-size);
+  text-decoration: underline;
+}
