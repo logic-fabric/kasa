@@ -26,13 +26,13 @@ const ABOUT_CONTENTS = [
 class About extends React.Component {
   render() {
     return (
-      <div className="About">
+      <main className="About">
         <Banner imgSource="../assets/mountain-landscape.png" />
         <h1 className="sr-only">Les valeurs de Kasa</h1>
         {ABOUT_CONTENTS.map(({ title, text }) => (
           <Collapse key={`about-${title}`} title={title} text={text} />
         ))}
-      </div>
+      </main>
     );
   }
 }

@@ -9,13 +9,13 @@ import { PropertyAdvertisement } from "../../data/propertyAdvertisement";
 class Home extends React.Component {
   render() {
     return (
-      <div className="Home">
+      <main className="Home">
         <Banner
           imgSource="../assets/coast-landscape.png"
           title="Chez vous, partout et ailleurs"
         />
         <Gallery advertisements={this.props.advertisements} />
-      </div>
+      </main>
     );
   }
 }

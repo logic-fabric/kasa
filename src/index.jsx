@@ -19,19 +19,17 @@ async function initApp(dataFetcher) {
       <div className="app-wrapper">
         <Router>
           <Header />
-          <main>
-            <Switch>
-              <Route exact path="/">
-                <Home advertisements={advertisementsList.advertisements} />
-              </Route>
-              <Route path="/a-propos">
-                <About />
-              </Route>
-              <Route>
-                <Error404 />
-              </Route>
-            </Switch>
-          </main>
+          <Switch>
+            <Route exact path="/">
+              <Home advertisements={advertisementsList.advertisements} />
+            </Route>
+            <Route path="/a-propos">
+              <About />
+            </Route>
+            <Route>
+              <Error404 />
+            </Route>
+          </Switch>
 
           <Footer />
         </Router>
