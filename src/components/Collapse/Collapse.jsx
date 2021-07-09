@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./Collapse.css";
 
@@ -12,5 +13,10 @@ class Collapse extends React.Component {
     );
   }
 }
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default Collapse;

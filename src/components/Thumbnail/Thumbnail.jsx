@@ -20,7 +20,9 @@ class Thumbnail extends React.Component {
 }
 
 Thumbnail.propTypes = {
+  cover: PropTypes.string,
   title: PropTypes.string.isRequired,
+  location: PropTypes.string,
 };
 
 export default Thumbnail;
