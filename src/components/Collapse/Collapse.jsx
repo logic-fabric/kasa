@@ -4,11 +4,41 @@ import PropTypes from "prop-types";
 import "./Collapse.css";
 
 class Collapse extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false,
+    };
+    this.updateIsOpen = this.updateIsOpen.bind(this);
+  }
+
+  updateIsOpen() {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+
   render() {
     return (
       <section className="collapse">
-        <h2 className="collapse__title">{this.props.title}</h2>
-        <p className="collapse__text">{this.props.text}</p>
+        <h2
+          className="collapse__title"
+          onClick={() => {
+            this.updateIsOpen();
+            console.log("toggled to", this.state);
+          }}
+        >
+          <span>{this.props.title}</span>
+          <i
+            className={`fas fa-chevron-${this.state.isOpen ? "up" : "down"}`}
+          ></i>
+        </h2>
+        <p
+          className={`collapse__text ${
+            this.state.isOpen ? "is-open" : "is-close"
+          }`}
+        >
+          {this.props.text}
+        </p>
       </section>
     );
   }

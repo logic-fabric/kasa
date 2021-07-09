@@ -13,6 +13,9 @@
 }
 
 .collapse__title {
+  display: flex;
+  justify-content: space-between;
+
   margin: 0;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -20,11 +23,33 @@
   color: white;
 
   background: var(--primary-500);
+
+  cursor: pointer;
+}
+
+.collapse__title span {
+  padding: 0.25rem 0;
+}
+
+.collapse__title i {
+  padding: 0.5rem 1rem;
 }
 
 .collapse__text {
   margin: 0;
   padding: 1.5rem 1rem 1rem 1rem;
+  overflow: hidden;
 
   font-weight: 400;
+
+  opacity: 1;
+
+  transition: 200ms;
+}
+
+.collapse__text.is-close {
+  padding: 0 1rem;
+  height: 0;
+
+  opacity: 0;
 }
