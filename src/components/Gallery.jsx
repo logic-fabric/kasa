@@ -10,8 +10,13 @@ class Gallery extends React.Component {
     return (
       <div className="gallery">
         <ul>
-          {this.props.advertisements.map(({ id, title }) => (
-            <Thumbnail key={`thumbnail-${id}`} title={title} />
+          {this.props.advertisements.map(({ id, cover, title, location }) => (
+            <Thumbnail
+              key={`thumbnail-${id}`}
+              cover={cover}
+              title={title}
+              location={location}
+            />
           ))}
         </ul>
       </div>
@@ -20,9 +25,8 @@ class Gallery extends React.Component {
 }
 
 Gallery.propTypes = {
-  advertisements: PropTypes.arrayOf(
-    PropTypes.instanceOf(PropertyAdvertisement)
-  ).isRequired,
+  advertisements: PropTypes.arrayOf(PropTypes.instanceOf(PropertyAdvertisement))
+    .isRequired,
 };
 
 export default Gallery;
