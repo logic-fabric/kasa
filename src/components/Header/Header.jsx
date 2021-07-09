@@ -9,16 +9,20 @@ class Header extends React.Component {
     return (
       <header>
         <Link to="/">
-        <img src={logo} alt="Kasa" />
+          <img src={logo} alt="Kasa" />
         </Link>
 
         <nav className="main-nav">
           <ul>
             <li>
-              <Link className="header-link" to="/">Accueil</Link>
+              <Link className="header-link" to="/">
+                Accueil
+              </Link>
             </li>
             <li>
-              <Link className="header-link" to="a-propos">&Agrave; propos</Link>
+              <Link className="header-link" to="/a-propos">
+                &Agrave; propos
+              </Link>
             </li>
           </ul>
         </nav>

@@ -13,6 +13,7 @@ class Gallery extends React.Component {
           {this.props.advertisements.map(({ id, cover, title, location }) => (
             <Thumbnail
               key={`thumbnail-${id}`}
+              id={id}
               cover={cover}
               title={title}
               location={location}
