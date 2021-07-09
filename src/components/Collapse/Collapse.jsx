@@ -5,9 +5,9 @@ import "./Collapse.css";
 class Collapse extends React.Component {
   render() {
     return (
-      <section>
-        <h2>{this.props.title}</h2>
-        <p>{this.props.text}</p>
+      <section className="collapse">
+        <h2 className="collapse__title">{this.props.title}</h2>
+        <p className="collapse__text">{this.props.text}</p>
       </section>
     );
   }

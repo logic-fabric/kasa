@@ -1,0 +1,30 @@
+.collapse {
+  max-width: 64rem;
+  margin: 2rem auto;
+  border-radius: 0.25rem;
+
+  background: var(--neutral-100);
+}
+
+.collapse__title,
+.collapse__text {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.collapse__title {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+
+  color: white;
+
+  background: var(--primary-500);
+}
+
+.collapse__text {
+  margin: 0;
+  padding: 1.5rem 1rem 1rem 1rem;
+
+  font-weight: 400;
+}
