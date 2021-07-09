@@ -8,7 +8,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
+        <Link to="/">
         <img src={logo} alt="Kasa" />
+        </Link>
 
         <nav className="main-nav">
           <ul>
