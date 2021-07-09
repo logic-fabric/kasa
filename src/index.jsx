@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { DataFetcher } from "./data/dataFetcher";
-import About from "./pages/About";
-import Error404 from "./pages/Error404";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import About from "./pages/About/About";
+import Error404 from "./pages/Error404/Error404";
+import Home from "./pages/Home/Home";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 

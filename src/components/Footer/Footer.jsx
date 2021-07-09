@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../css/Footer.css";
-import logoWhite from "../logo-white.svg";
+import "./Footer.css";
+import logoWhite from "../../logo-white.svg";
 
 class Footer extends React.Component {
   render() {

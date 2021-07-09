@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "../css/Thumbnail.css";
+import "./Thumbnail.css";
 
 class Thumbnail extends React.Component {
   render() {

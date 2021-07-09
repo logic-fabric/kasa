@@ -1,7 +1,7 @@
 import React from "react";
 
-import Banner from "../components/Banner";
-import "../css/About.css";
+import Banner from "../../components/Banner/Banner";
+import "./About.css";
 
 class About extends React.Component {
   render() {

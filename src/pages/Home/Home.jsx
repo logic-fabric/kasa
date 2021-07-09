@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Banner from "../components/Banner";
-import Gallery from "../components/Gallery";
-import "../css/Home.css";
-import { PropertyAdvertisement } from "../data/propertyAdvertisement";
+import Banner from "../../components/Banner/Banner";
+import Gallery from "../../components/Gallery/Gallery";
+import "./Home.css";
+import { PropertyAdvertisement } from "../../data/propertyAdvertisement";
 
 class Home extends React.Component {
   render() {
