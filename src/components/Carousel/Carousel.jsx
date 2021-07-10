@@ -39,29 +39,41 @@ class Carousel extends React.Component {
     return (
       <div className="carousel">
         <div className="carousel__pictures-box">
-          {pictures.map((picture, index) => (
-            <img
-              className="carousel__picture"
-              src={picture}
-              alt=""
-              key={`picture-${index}`}
-            />
-          ))}
+          {pictures.length > 0 ? (
+            pictures.map((picture, index) => (
+              <img
+                className="carousel__picture"
+                src={picture}
+                alt=""
+                key={`picture-${index}`}
+              />
+            ))
+          ) : (
+            <p className="carousel__no-pic-message">Aucune image disponible</p>
+          )}
         </div>
         <div className="carousel__filter"></div>
-        <nav className="carousel__nav">
-          <i
-            className="fas fa-chevron-left"
-            onClick={() => this.updatePicture(false)}
-          ></i>
-          <i
-            className="fas fa-chevron-right"
-            onClick={() => this.updatePicture(true)}
-          ></i>
-        </nav>
-        <div className="carousel__counter">
-          {this.state.currentPictureIndex + 1}/{pictures.length}
-        </div>
+        {pictures.length > 1 ? (
+          <nav className="carousel__nav">
+            <i
+              className="fas fa-chevron-left"
+              onClick={() => this.updatePicture(false)}
+            ></i>
+            <i
+              className="fas fa-chevron-right"
+              onClick={() => this.updatePicture(true)}
+            ></i>
+          </nav>
+        ) : (
+          ""
+        )}
+        {pictures.length > 0 ? (
+          <div className="carousel__counter">
+            {this.state.currentPictureIndex + 1}/{pictures.length}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     );
   }
