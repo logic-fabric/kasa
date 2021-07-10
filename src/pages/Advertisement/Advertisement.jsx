@@ -1,6 +1,7 @@
 import React from "react";
 
 import Error404 from "../Error404/Error404";
+import Carousel from "../../components/Carousel/Carousel";
 import Collapse from "../../components/Collapse/Collapse";
 import "./Advertisement.css";
 
@@ -24,7 +25,7 @@ class Advertisement extends React.Component {
 
     return (
       <main className="Advertisement">
-        <div>[ CAROUSEL - COMING SOON ]</div>
+        <Carousel pictures={ad.pictures} />
         <section>
           <header className="Advertisement__header">
             <div className="Advertisement__summary-box">

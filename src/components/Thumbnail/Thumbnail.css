@@ -11,12 +11,15 @@
   border-radius: 0.5rem;
   overflow: hidden;
 
-  background: linear-gradient(190deg, var(--primary-500), var(--primary-900));
+  background: var(--primary-500);
 }
 
 .thumbnail__cover {
   width: 100%;
   height: 100%;
+
+  color: white;
+  text-decoration: none;
 
   object-fit: cover;
 }
@@ -25,7 +28,7 @@
   position: absolute;
   top: 0;
 
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(185deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.5));
 }
 
 .thumbnail__title {
