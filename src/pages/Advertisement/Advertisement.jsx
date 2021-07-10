@@ -25,16 +25,24 @@ class Advertisement extends React.Component {
       <main className="Advertisement">
         <div>[ CAROUSEL - COMING SOON ]</div>
         <section>
-          <div>
-            <h1>{ad.title} !</h1>
-            <h2>{ad.location}</h2>
-            <div>[ TAGS - COMING SOON ]</div>
-          </div>
-          <div>
-            <p>{ad.host.name}</p>
-            <img src={ad.host.picture} alt={ad.host.name} />
-            <div>[ RATING - COMING SOON ]</div>
-          </div>
+          <header className="Advertisement__header">
+            <div className="Advertisement__summary-box">
+              <h1 className="Advertisement__title">{ad.title} !</h1>
+              <h2 className="Advertisement__location">{ad.location}</h2>
+              <div>[ TAGS - COMING SOON ]</div>
+            </div>
+            <div>
+              <div className="Advertisement__host-box">
+                <p className="Advertisement__host-name">{ad.host.name}</p>
+                <img
+                  className="Advertisement__host-picture"
+                  src={ad.host.picture}
+                  alt={ad.host.name}
+                />
+              </div>
+              <div className="Advertisement__rating">[ RATING - COMING SOON ]</div>
+            </div>
+          </header>
           <div className="Advertisement__collapses-box">
             <div className="Advertisement__collapse">
               <Collapse title="Description" text={ad.description} />

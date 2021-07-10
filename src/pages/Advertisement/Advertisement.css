@@ -1,3 +1,49 @@
+.Advertisement__header {
+  align-items: flex-start;
+}
+
+.Advertisement__summary-box {
+  max-width: 50rem;
+  margin: 0 4rem 0 0;
+}
+
+.Advertisement__title {
+  margin: 0;
+
+  font-size: var(--h2-size);
+  line-height: 1.35;
+}
+
+.Advertisement__location {
+  margin: 0.5rem 0;
+
+  font-size: var(--h5-size);
+}
+
+.Advertisement__host-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  max-width: 20rem;
+}
+
+.Advertisement__host-name {
+  margin: 0 1rem 0 0;
+
+  font-size: var(--h5-size);
+}
+
+.Advertisement__host-picture {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.Advertisement__rating {
+  margin: 1.5rem 0 0 0;
+}
+
 .Advertisement__collapses-box {
   display: flex;
   justify-content: space-between;
