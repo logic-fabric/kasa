@@ -8,13 +8,7 @@ import "./Advertisement.css";
 class Advertisement extends React.Component {
   render() {
     const { id } = this.props.match.params;
-    const advertisementsList = this.props.advertisementsList;
-
-    console.log("advertisementsList =", advertisementsList);
-
     const advertisementToDisplay = this.props.advertisementsList.findById(id);
-
-    console.log("advertisementToDisplay =", advertisementToDisplay);
 
     if (!advertisementToDisplay) {
       return <Error404 />;

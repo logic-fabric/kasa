@@ -22,13 +22,7 @@ class Collapse extends React.Component {
       <section
         className={`collapse${this.state.isOpen ? " is-open" : " is-close"}`}
       >
-        <h2
-          className="collapse__title"
-          onClick={() => {
-            this.updateIsOpen();
-            console.log("toggled to", this.state);
-          }}
-        >
+        <h2 className="collapse__title" onClick={this.updateIsOpen}>
           <span>{this.props.title}</span>
           <i
             className={`fas fa-chevron-${this.state.isOpen ? "up" : "down"}`}
