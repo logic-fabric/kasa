@@ -47,6 +47,14 @@ export class PropertyAdvertisementsList {
   }
 
   findById(id) {
-    return this.advertisements.filter((ad) => ad.id === id);
+    const advertisementsAssociatedToId = this.advertisements.filter(
+      (ad) => ad.id === id
+    );
+
+    if (advertisementsAssociatedToId.length === 0) {
+      return null;
+    }
+
+    return advertisementsAssociatedToId[0];
   }
 }

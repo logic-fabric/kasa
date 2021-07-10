@@ -1,5 +1,6 @@
 import React from "react";
 
+import Error404 from "../Error404/Error404";
 import "./Advertisement.css";
 
 class Advertisement extends React.Component {
@@ -9,9 +10,13 @@ class Advertisement extends React.Component {
 
     console.log("advertisementsList =", advertisementsList);
 
-    const advertisementsToDisplay = this.props.advertisementsList.findById(id);
+    const advertisementToDisplay = this.props.advertisementsList.findById(id);
 
-    console.log("advertismentToDisplay =", advertisementsToDisplay);
+    console.log("advertisementToDisplay =", advertisementToDisplay);
+
+    if (!advertisementToDisplay) {
+      return <Error404 />;
+    }
 
     return (
       <main className="Advertisement">
