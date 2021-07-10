@@ -1,5 +1,7 @@
 .Advertisement__header {
   align-items: flex-start;
+
+  padding: 2rem 0 0 0;
 }
 
 .Advertisement__summary-box {
@@ -20,6 +22,20 @@
   font-size: var(--h5-size);
 }
 
+.Advertisement__tags-box {
+  margin: 2rem 0 0 0;
+}
+
+.Advertisement__tag {
+  margin: 0 0.5rem 0 0;
+  padding: 0.25rem 2rem;
+  border-radius: 0.5rem;
+
+  color: white;
+
+  background: var(--primary-500);
+}
+
 .Advertisement__host-box {
   display: flex;
   justify-content: space-around;
@@ -38,10 +54,28 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+
+  font-size: var(--xs-size);
+  text-align: center;
+
+  background: var(--neutral-300);
 }
 
 .Advertisement__rating {
   margin: 1.5rem 0 0 0;
+
+  text-align: right;
+}
+
+.Advertisement__rating i {
+  margin: 0 0 0 0.5rem;
+
+  color: var(--neutral-200);
+  font-size: 1.5rem;
+}
+
+.Advertisement__rating i.colored {
+  color: var(--primary-500);
 }
 
 .Advertisement__collapses-box {

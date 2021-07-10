@@ -20,6 +20,7 @@ class Advertisement extends React.Component {
     }
 
     const ad = advertisementToDisplay;
+    const ratingScale = [1, 2, 3, 4, 5];
 
     return (
       <main className="Advertisement">
@@ -29,7 +30,13 @@ class Advertisement extends React.Component {
             <div className="Advertisement__summary-box">
               <h1 className="Advertisement__title">{ad.title} !</h1>
               <h2 className="Advertisement__location">{ad.location}</h2>
-              <div>[ TAGS - COMING SOON ]</div>
+              <div className="Advertisement__tags-box">
+                {ad.tags.map((tag) => (
+                  <span className="Advertisement__tag" key={`tag-${tag}`}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
             <div>
               <div className="Advertisement__host-box">
@@ -40,14 +47,23 @@ class Advertisement extends React.Component {
                   alt={ad.host.name}
                 />
               </div>
-              <div className="Advertisement__rating">[ RATING - COMING SOON ]</div>
+              <div className="Advertisement__rating">
+                {ratingScale.map((scale) => (
+                  <i
+                    className={`fas fa-star${
+                      scale <= ad.rating ? " colored" : ""
+                    }`}
+                    key={`star-${scale}`}
+                  ></i>
+                ))}
+              </div>
             </div>
           </header>
+
           <div className="Advertisement__collapses-box">
             <div className="Advertisement__collapse">
               <Collapse title="Description" text={ad.description} />
             </div>
-
             <div className="Advertisement__collapse">
               <Collapse
                 title="Êquipements"

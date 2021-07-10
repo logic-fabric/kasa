@@ -4,7 +4,11 @@
   --primary-900: #3e0000;
 
   --neutral-100: #f7f7f7;
+  --neutral-200: #e3e3e3;
+  --neutral-300: #c4c4c4;
 
+  --xs-size: 0.7rem;
+  --sm-size: 0.85rem;
   --h1-size: 3rem;
   --h2-size: 2.25rem;
   --h3-size: 1.5rem;
