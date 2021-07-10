@@ -45,4 +45,8 @@ export class PropertyAdvertisementsList {
   constructor(advertisements) {
     this.advertisements = advertisements;
   }
+
+  findById(id) {
+    return this.advertisements.filter((ad) => ad.id === id);
+  }
 }

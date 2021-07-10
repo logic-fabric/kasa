@@ -29,7 +29,12 @@ async function initApp(dataFetcher) {
             </Route>
             <Route
               path="/location/:id"
-              render={(props) => <Advertisement {...props} />}
+              render={(props) => (
+                <Advertisement
+                  advertisementsList={advertisementsList}
+                  {...props}
+                />
+              )}
             ></Route>
             <Route>
               <Error404 />
