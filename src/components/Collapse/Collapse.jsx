@@ -19,7 +19,9 @@ class Collapse extends React.Component {
 
   render() {
     return (
-      <section className="collapse">
+      <section
+        className={`collapse${this.state.isOpen ? " is-open" : " is-close"}`}
+      >
         <h2
           className="collapse__title"
           onClick={() => {
@@ -33,8 +35,8 @@ class Collapse extends React.Component {
           ></i>
         </h2>
         <p
-          className={`collapse__text ${
-            this.state.isOpen ? "is-open" : "is-close"
+          className={`collapse__text${
+            this.state.isOpen ? " is-open" : " is-close"
           }`}
         >
           {this.props.text}

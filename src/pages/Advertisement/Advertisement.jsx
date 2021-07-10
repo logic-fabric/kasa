@@ -35,12 +35,17 @@ class Advertisement extends React.Component {
             <img src={ad.host.picture} alt={ad.host.name} />
             <div>[ RATING - COMING SOON ]</div>
           </div>
-          <div>
-            <Collapse title="Description" text={ad.description} />
-            <Collapse
-              title="Êquipements"
-              text={`${ad.equipments.join(", ")}`}
-            />
+          <div className="Advertisement__collapses-box">
+            <div className="Advertisement__collapse">
+              <Collapse title="Description" text={ad.description} />
+            </div>
+
+            <div className="Advertisement__collapse">
+              <Collapse
+                title="Êquipements"
+                text={`${ad.equipments.join(", ")}`}
+              />
+            </div>
           </div>
         </section>
       </main>

@@ -1,0 +1,10 @@
+.Advertisement__collapses-box {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 0 2rem 0;
+}
+
+.Advertisement__collapse {
+  max-width: 36rem;
+}
