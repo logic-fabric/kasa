@@ -60,10 +60,7 @@ class Advertisement extends React.Component {
               <Collapse title="Description" text={ad.description} />
             </div>
             <div className="Advertisement__collapse">
-              <Collapse
-                title="Êquipements"
-                text={`${ad.equipments.join(", ")}`}
-              />
+              <Collapse title="Êquipements" text={ad.equipments} />
             </div>
           </div>
         </section>

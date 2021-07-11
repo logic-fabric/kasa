@@ -33,7 +33,15 @@ class Collapse extends React.Component {
             this.state.isOpen ? " is-open" : " is-close"
           }`}
         >
-          {this.props.text}
+          {typeof this.props.text === "string" ? (
+            this.props.text
+          ) : (
+            <ul>
+              {this.props.text.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          )}
         </p>
       </section>
     );

@@ -40,8 +40,9 @@
 }
 
 .collapse__text {
+  height: 100%;
   margin: 0;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   overflow: hidden;
 
   font-weight: 400;
