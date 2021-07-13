@@ -42,3 +42,14 @@
   font-size: var(--h5-size);
   font-weight: 500;
 }
+
+@media screen and (max-width: 55.5rem) {
+  .thumbnail,
+  .thumbnail__filter {
+    height: 16rem;
+  }
+
+  .thumbnail {
+    margin: 0.5rem 0;
+  }
+}

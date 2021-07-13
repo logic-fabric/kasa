@@ -11,14 +11,15 @@
   --neutral-200: #e3e3e3;
   --neutral-300: #c4c4c4;
 
-  --xs-size: 0.7rem;
-  --sm-size: 0.85rem;
   --h1-size: 3rem;
   --h2-size: 2.25rem;
   --h3-size: 1.5rem;
   --h4-size: 1.35rem;
   --h5-size: 1.2rem;
   --h6-size: 1.1rem;
+  --txt-size: 1rem;
+  --sm-size: 0.85rem;
+  --xs-size: 0.7rem;
 }
 
 /* ========
@@ -89,11 +90,25 @@ ul {
    =============== */
 
 .app-wrapper {
-  max-width: 75.75rem;
+  width: 75.75rem;
   height: 100%;
   min-height: 100vh;
   margin: auto;
   padding: 0 3rem;
+}
+
+@media screen and (max-width: 81.75rem) {
+  .app-wrapper {
+    width: 51.5rem;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 55.5rem) {
+  .app-wrapper {
+    width: 21.25rem;
+    padding: 0 1rem;
+  }
 }
 
 /* ===============

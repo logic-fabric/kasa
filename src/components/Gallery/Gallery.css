@@ -13,3 +13,11 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 55.5rem) {
+  .gallery {
+    margin: 1rem 0;
+    padding: 0;
+    border-radius: 0;
+  }
+}

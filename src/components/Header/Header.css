@@ -19,3 +19,22 @@ header {
   font-size: var(--h3-size);
   text-decoration: none;
 }
+
+@media screen and (max-width: 55.5rem) {
+  header {
+    padding: 1.5rem 0;
+  }
+
+  .header-logo {
+    height: 2.25rem;
+  }
+
+  .main-nav li {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .header-link {
+    font-size: var(--txt-size);
+    text-transform: uppercase;
+  }
+}
