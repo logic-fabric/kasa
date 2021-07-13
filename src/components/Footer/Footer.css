@@ -7,7 +7,7 @@ footer {
 }
 
 footer img {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 1rem 0;
 
   color: white;
 }
@@ -15,4 +15,14 @@ footer img {
 footer p {
   color: white;
   font-size: var(--h3-size);
+}
+
+@media screen and (max-width: 55.5rem) {
+  footer img {
+    height: 2rem;
+  }
+
+  footer p {
+    font-size: var(--txt-size);
+  }
 }

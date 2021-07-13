@@ -1,3 +1,17 @@
 .About {
   padding: 1rem;
 }
+
+@media screen and (max-width: 55.5rem) {
+  .About {
+    padding: 0;
+  }
+
+  .About .hero-banner {
+    height: 14rem;
+  }
+
+  .About .collapses-box {
+    margin: 1.5rem 0;
+  }
+}

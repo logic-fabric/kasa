@@ -13,7 +13,7 @@
 .collapse__title,
 .collapse__text {
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: var(--h3-size);
 }
 
 .collapse__title {
@@ -57,4 +57,30 @@
   height: 0;
 
   opacity: 0;
+}
+
+@media screen and (max-width: 55.5rem) {
+  .collapse {
+    margin: 1rem auto;
+  }
+
+  .collapse__title,
+  .collapse__text {
+    line-height: 1.35rem;
+    font-size: var(--txt-size);
+  }
+
+  .collapse__title span {
+    padding: 0.125rem 0;
+  }
+
+  .collapse__title i {
+    padding: 0.25rem 0;
+  }
+
+  .collapse__text {
+
+    padding: 1rem;
+
+  }
 }
