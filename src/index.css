@@ -89,7 +89,7 @@ ul {
    CONTENT WRAPPER
    =============== */
 
-.app-wrapper {
+.content-wrapper {
   width: 75.75rem;
   height: 100%;
   min-height: 100vh;
@@ -98,14 +98,14 @@ ul {
 }
 
 @media screen and (max-width: 81.75rem) {
-  .app-wrapper {
+  .content-wrapper {
     width: 51.5rem;
     padding: 0 2rem;
   }
 }
 
 @media screen and (max-width: 55.5rem) {
-  .app-wrapper {
+  .content-wrapper {
     width: 21.25rem;
     padding: 0 1rem;
   }

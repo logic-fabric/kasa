@@ -17,8 +17,8 @@ async function initApp(dataFetcher) {
 
   ReactDOM.render(
     <React.StrictMode>
-      <div className="app-wrapper">
-        <Router>
+      <Router>
+        <div className="content-wrapper">
           <Header />
           <Switch>
             <Route exact path="/">
@@ -40,10 +40,9 @@ async function initApp(dataFetcher) {
               <Error404 />
             </Route>
           </Switch>
-
-          <Footer />
-        </Router>
-      </div>
+        </div>
+        <Footer />
+      </Router>
     </React.StrictMode>,
     document.getElementById("root")
   );

@@ -9,7 +9,7 @@
 }
 
 .Error404__text {
-  font-size: 2rem;
+  font-size: var(--h2-size);
 }
 
 .Error404__link-to-home {
@@ -20,4 +20,22 @@
   color: var(--primary-500);
   font-size: var(--h3-size);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 55.5rem) {
+  .Error404__status-code {
+    margin: 8rem 0 1rem 0;
+
+    font-size: 6rem;
+  }
+
+  .Error404__text {
+    font-size: var(--h6-size);
+  }
+
+  .Error404__link-to-home {
+    margin: 4rem 0 0 0;
+
+    font-size: var(--txt-size);
+  }
 }
