@@ -52,7 +52,6 @@ class Carousel extends React.Component {
             <p className="carousel__no-pic-message">Aucune image disponible</p>
           )}
         </div>
-        <div className="carousel__filter"></div>
         {pictures.length > 1 ? (
           <nav className="carousel__nav">
             <i
