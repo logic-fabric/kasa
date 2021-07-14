@@ -17,7 +17,7 @@ footer p {
   font-size: var(--h3-size);
 }
 
-@media screen and (max-width: 55.5rem) {
+@media screen and (max-width: 81.75rem) {
   footer img {
     height: 2rem;
   }

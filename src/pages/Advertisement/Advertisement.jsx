@@ -33,7 +33,7 @@ class Advertisement extends React.Component {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="Advertisement__aside-box">
               <div className="Advertisement__host-box">
                 <p className="Advertisement__host-name">{ad.host.name}</p>
                 <img
