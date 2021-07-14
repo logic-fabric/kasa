@@ -20,6 +20,10 @@ header {
   text-decoration: none;
 }
 
+.active-link {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 55.5rem) {
   header {
     padding: 1.5rem 0;

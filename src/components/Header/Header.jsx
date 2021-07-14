@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./Header.css";
 import logo from "../../logo.svg";
@@ -15,14 +15,23 @@ class Header extends React.Component {
         <nav className="main-nav">
           <ul>
             <li>
-              <Link className="header-link" to="/">
+              <NavLink
+                className="header-link"
+                activeClassName="active-link"
+                exact
+                to="/"
+              >
                 Accueil
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="header-link" to="/a-propos">
+              <NavLink
+                className="header-link"
+                activeClassName="active-link"
+                to="/a-propos"
+              >
                 &Agrave; propos
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

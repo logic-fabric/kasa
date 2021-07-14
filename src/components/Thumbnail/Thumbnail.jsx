@@ -7,7 +7,10 @@ import "./Thumbnail.css";
 class Thumbnail extends React.Component {
   render() {
     return (
-      <Link to={`/location/${this.props.id}`}>
+      <Link
+        to={`/location/${this.props.id}`}
+        onClick={() => window.scrollTo(0, 0)}
+      >
         <article className="thumbnail">
           <img
             className="thumbnail__cover"
