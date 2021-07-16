@@ -20,17 +20,12 @@ class Carousel extends React.Component {
   }
 
   updatePicture(nextClicked = true) {
-    const picturesBox = document.querySelector(".carousel__pictures-box");
-
     const current = this.state.currentPictureIndex;
     const quantity = this.props.pictures.length;
-    const nextPictureIndex = nextClicked
+    const pictureToDisplayIndex = nextClicked
       ? (current + 1) % quantity
       : (current + quantity - 1) % quantity;
-    this.updateCurrentPicture(nextPictureIndex);
-
-    const translateValue = -100 * nextPictureIndex;
-    picturesBox.style["transform"] = `translateX(${translateValue}%)`;
+    this.updateCurrentPicture(pictureToDisplayIndex);
   }
 
   render() {
@@ -40,14 +35,11 @@ class Carousel extends React.Component {
       <div className="carousel">
         <div className="carousel__pictures-box">
           {pictures.length > 0 ? (
-            pictures.map((picture, index) => (
-              <img
-                className="carousel__picture"
-                src={picture}
-                alt=""
-                key={`picture-${index}`}
-              />
-            ))
+            <img
+              className="carousel__picture"
+              src={pictures[this.state.currentPictureIndex]}
+              alt=""
+            />
           ) : (
             <p className="carousel__no-pic-message">Aucune image disponible</p>
           )}
