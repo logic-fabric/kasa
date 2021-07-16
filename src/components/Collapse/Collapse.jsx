@@ -28,21 +28,26 @@ class Collapse extends React.Component {
             className={`fas fa-chevron-${this.state.isOpen ? "up" : "down"}`}
           ></i>
         </h2>
-        <p
-          className={`collapse__text${
-            this.state.isOpen ? " is-open" : " is-close"
-          }`}
-        >
-          {typeof this.props.text === "string" ? (
-            this.props.text
-          ) : (
-            <ul>
-              {this.props.text.map((item) => (
-                <li>{item}</li>
-              ))}
-            </ul>
-          )}
-        </p>
+
+        {typeof this.props.text === "string" ? (
+          <p
+            className={`collapse__text${
+              this.state.isOpen ? " is-open" : " is-close"
+            }`}
+          >
+            {this.props.text}
+          </p>
+        ) : (
+          <ul
+            className={`collapse__text${
+              this.state.isOpen ? " is-open" : " is-close"
+            }`}
+          >
+            {this.props.text.map((item, index) => (
+              <li key={`item-${index}`}>{item}</li>
+            ))}
+          </ul>
+        )}
       </section>
     );
   }
@@ -50,7 +55,10 @@ class Collapse extends React.Component {
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 };
 
 export default Collapse;

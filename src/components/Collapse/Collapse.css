@@ -45,6 +45,7 @@
   padding: 1.5rem;
   overflow: hidden;
 
+  color: var(--primary-500);
   font-weight: 400;
 
   opacity: 1;
@@ -59,7 +60,7 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 81.75rem)  {
+@media screen and (max-width: 81.75rem) {
   .collapse {
     margin: 1rem auto;
   }
@@ -79,8 +80,6 @@
   }
 
   .collapse__text {
-
     padding: 1rem;
-
   }
 }
