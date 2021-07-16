@@ -4,10 +4,18 @@ import {
 } from "./propertyAdvertisement";
 
 export class DataFetcher {
+  /**
+   * @constructs
+   * @param {string} dataSource
+   */
   constructor(dataSource) {
     this._dataSource = dataSource;
   }
 
+  /**
+   * Fetch the data source and return its content as a PropertyAdvertisementsList if the fetching is ok.
+   * @returns {PropertyAdvertisementsList}
+   */
   async fetchSource() {
     try {
       let response = await fetch(this._dataSource);

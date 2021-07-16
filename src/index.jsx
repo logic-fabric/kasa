@@ -12,6 +12,10 @@ import Header from "./components/Header/Header";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
+/**
+ * Fetch prototyping sample data and init a React app including a React Router.
+ * @param {DataFetcher} dataFetcher
+ */
 async function initApp(dataFetcher) {
   const advertisementsList = await dataFetcher.fetchSource();
 

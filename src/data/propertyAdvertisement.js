@@ -46,6 +46,10 @@ export class PropertyAdvertisementsList {
     this.advertisements = advertisements;
   }
 
+  /**
+   * @param {number} id 
+   * @returns {(null|PropertyAdvertisement)}
+   */
   findById(id) {
     const advertisementsAssociatedToId = this.advertisements.filter(
       (ad) => ad.id === id
