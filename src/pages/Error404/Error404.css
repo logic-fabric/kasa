@@ -34,7 +34,7 @@
   }
 
   .Error404__link-to-home {
-    margin: 4rem 0 0 0;
+    margin: 4rem 0;
 
     font-size: var(--txt-size);
   }
