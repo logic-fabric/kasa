@@ -24,13 +24,16 @@ async function initApp(dataFetcher) {
       <Router>
         <div className="content-wrapper">
           <Header />
+
           <Switch>
             <Route exact path="/">
               <Home advertisements={advertisementsList.advertisements} />
             </Route>
+
             <Route path="/a-propos">
               <About />
             </Route>
+
             <Route
               path="/location/:id"
               render={(props) => (
@@ -40,11 +43,13 @@ async function initApp(dataFetcher) {
                 />
               )}
             ></Route>
+
             <Route>
               <Error404 />
             </Route>
           </Switch>
         </div>
+
         <Footer />
       </Router>
     </React.StrictMode>,

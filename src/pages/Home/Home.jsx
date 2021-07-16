@@ -15,6 +15,7 @@ class Home extends React.Component {
           altText="Un paysage sauvage de bord de mer"
           title="Chez vous, partout et ailleurs"
         />
+
         <Gallery advertisements={this.props.advertisements} />
       </main>
     );
@@ -22,9 +23,8 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
-  advertisements: PropTypes.arrayOf(
-    PropTypes.instanceOf(PropertyAdvertisement)
-  ).isRequired,
+  advertisements: PropTypes.arrayOf(PropTypes.instanceOf(PropertyAdvertisement))
+    .isRequired,
 };
 
 export default Home;

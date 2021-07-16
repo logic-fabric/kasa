@@ -31,7 +31,9 @@ class About extends React.Component {
           imgSource="../assets/mountain-landscape.png"
           altText="Un paysage de montagne"
         />
+
         <h1 className="sr-only">Les valeurs de Kasa</h1>
+
         <div className="collapses-box">
           {ABOUT_CONTENTS.map(({ title, text }) => (
             <Collapse key={`about-${title}`} title={title} text={text} />

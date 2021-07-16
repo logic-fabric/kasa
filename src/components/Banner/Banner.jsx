@@ -7,10 +7,8 @@ class Banner extends React.Component {
   render() {
     return (
       <div className="hero-banner">
-        <img
-          src={this.props.imgSource}
-          alt={this.props.altText}
-        />
+        <img src={this.props.imgSource} alt={this.props.altText} />
+
         <h1>{this.props.title}</h1>
       </div>
     );

@@ -18,7 +18,9 @@ class Thumbnail extends React.Component {
             src={this.props.cover}
             alt={`Une location située en ${this.props.location}`}
           />
+
           <div className="thumbnail__filter"></div>
+
           <h2 className="thumbnail__title">{this.props.title}</h2>
         </article>
       </Link>

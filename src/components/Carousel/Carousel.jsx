@@ -19,6 +19,12 @@ class Carousel extends React.Component {
     });
   }
 
+  /**
+   * Update the state to the next or the previous picture, where :
+   * - the next picture of the last one is the first one
+   * - the previous picture of the first one is the last one
+   * @param {boolean} nextClicked
+   */
   updatePicture(nextClicked = true) {
     const current = this.state.currentPictureIndex;
     const quantity = this.props.pictures.length;
@@ -44,6 +50,7 @@ class Carousel extends React.Component {
             <p className="carousel__no-pic-message">Aucune image disponible</p>
           )}
         </div>
+
         {pictures.length > 1 ? (
           <nav className="carousel__nav">
             <i
@@ -58,6 +65,7 @@ class Carousel extends React.Component {
         ) : (
           ""
         )}
+
         {pictures.length > 0 ? (
           <div className="carousel__counter">
             {this.state.currentPictureIndex + 1}/{pictures.length}
