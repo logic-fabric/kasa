@@ -9,7 +9,7 @@ class Banner extends React.Component {
       <div className="hero-banner">
         <img
           src={this.props.imgSource}
-          alt="Un paysage sauvage de bord de mer"
+          alt={this.props.altText}
         />
         <h1>{this.props.title}</h1>
       </div>
@@ -19,6 +19,7 @@ class Banner extends React.Component {
 
 Banner.propTypes = {
   imgSource: PropTypes.string.isRequired,
+  altText: PropTypes.string.isRequired,
   title: PropTypes.string,
 };
 

@@ -27,7 +27,10 @@ class About extends React.Component {
   render() {
     return (
       <main className="About">
-        <Banner imgSource="../assets/mountain-landscape.png" />
+        <Banner
+          imgSource="../assets/mountain-landscape.png"
+          altText="Un paysage de montagne"
+        />
         <h1 className="sr-only">Les valeurs de Kasa</h1>
         <div className="collapses-box">
           {ABOUT_CONTENTS.map(({ title, text }) => (
