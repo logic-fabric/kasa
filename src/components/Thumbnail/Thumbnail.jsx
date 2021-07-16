@@ -8,6 +8,7 @@ class Thumbnail extends React.Component {
   render() {
     return (
       <Link
+        className="thumbnail-wrapper"
         to={`/location/${this.props.id}`}
         onClick={() => window.scrollTo(0, 0)}
       >

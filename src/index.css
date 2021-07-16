@@ -106,8 +106,9 @@ ul {
 
 @media screen and (max-width: 55.5rem) {
   .content-wrapper {
-    width: 21.25rem;
-    padding: 0 1rem;
+    width: calc(100% - 2rem);
+    max-width: 21.25rem;
+    padding: 0;
   }
 }
 
