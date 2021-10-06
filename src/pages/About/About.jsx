@@ -36,7 +36,7 @@ class About extends React.Component {
 
         <div className="collapses-box">
           {ABOUT_CONTENTS.map(({ title, text }) => (
-            <Collapse key={`about-${title}`} title={title} text={text} />
+            <Collapse key={`about-${title}`} title={title} textArray={[text]} />
           ))}
         </div>
       </main>

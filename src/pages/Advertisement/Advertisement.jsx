@@ -63,11 +63,11 @@ class Advertisement extends React.Component {
 
           <div className="Advertisement__collapses-box">
             <div className="Advertisement__collapse">
-              <Collapse title="Description" text={ad.description} />
+              <Collapse title="Description" textArray={[ad.description]} />
             </div>
 
             <div className="Advertisement__collapse">
-              <Collapse title="Êquipements" text={ad.equipments} />
+              <Collapse title="Êquipements" textArray={ad.equipments} />
             </div>
           </div>
         </section>
