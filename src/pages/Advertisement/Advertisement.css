@@ -95,12 +95,6 @@
   width: 36rem;
 }
 
-.Advertisement__header {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 81.75rem) {
   .Advertisement__header {
     padding: 1.5rem 0 0 0;
