@@ -1,5 +1,7 @@
 # Kasa - Mai 2021
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/55a165f3188b409684a659e6146a47f0)](https://www.codacy.com/gh/logic-fabric/kasa/dashboard?utm_source=github.com&utm_medium=referral&utm_content=logic-fabric/kasa&utm_campaign=Badge_Grade)
+
 Code source du **Projet 11** - **_Développez une application web avec React et React Router_** du parcours **Développeur Front-end** d'_OpenClassrooms_.
 
 ## Page de démonstration
