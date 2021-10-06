@@ -43,9 +43,9 @@ export class DataFetcher {
 
       return new PropertyAdvertisementsList(advertisementInstances);
     } else {
-      console.error(
-        `HTTP-Error-${response.status} while fetching ${this._dataSource}`
-      );
+      const message = `Oups ! Une erreur s'est produite.\n\nHTTP-Error-${response.status} while fetching ${this._dataSource}`;
+
+      window.alert(message);
     }
   }
 }
