@@ -10,7 +10,7 @@ class Home extends React.Component {
     return (
       <main className="Home">
         <Banner
-          imgSource="../assets/coast-landscape.png"
+          imgSource="../assets/coast-landscape.jpeg"
           altText="Un paysage sauvage de bord de mer"
           title="Chez vous, partout et ailleurs"
         />

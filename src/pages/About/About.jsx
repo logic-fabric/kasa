@@ -28,7 +28,7 @@ class About extends React.Component {
     return (
       <main className="About">
         <Banner
-          imgSource="../assets/mountain-landscape.png"
+          imgSource="../assets/mountain-landscape.jpeg"
           altText="Un paysage de montagne"
         />
 
